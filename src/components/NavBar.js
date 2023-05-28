@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Logo from "./Logo"
 import {useRouter} from "next/router"
-import {TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon} from "./Icons"
+import {TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, SunIcon, MoonIcon, Facebook} from "./Icons"
 import {motion} from "framer-motion"
 import useThemeSwticher from "./hooks/useThemeSwticher"
 import { useState } from "react"
@@ -84,40 +84,33 @@ const NavBar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
             <motion.a
-                href='https://twitter.com'
+                href='https://twitter.com/23Mridul'
                 target={'_blank'}
                 whileTap={{
                 scale: 0.9
             }}
                 className="w-6 mx-3"whileHover={{y:-2}} ><TwitterIcon/></motion.a>
             <motion.a
-                href='https://twitter.com'
+                href='https://github.com/Mridul-web-me'
                 target={'_blank'}
                 whileTap={{
                 scale: 0.9
             }}
                 className="w-6 mx-3"whileHover={{y:-2}} ><GithubIcon/></motion.a>
             <motion.a
-                href='https://twitter.com'
+                href='https://www.linkedin.com/in/mridul-islam-1990a9155/'
                 target={'_blank'}
                 whileTap={{
                 scale: 0.9
             }}
                 className="w-6 mx-3"whileHover={{y:-2}} ><LinkedInIcon/></motion.a>
             <motion.a
-                href='https://twitter.com'
+                href='https://www.facebook.com/mridul.islam01'
                 target={'_blank'}
                 whileTap={{
                 scale: 0.9
             }}
-                className="w-6 mx-3 bg-light rounded-full"whileHover={{y:-2}} ><PinterestIcon/></motion.a>
-            <motion.a
-                href='https://twitter.com'
-                target={'_blank'}
-                whileTap={{
-                scale: 0.9
-            }}
-                className="w-6 ml-3"whileHover={{y:-2}} ><DribbbleIcon/></motion.a>
+                className="w-6 mx-3 bg-light rounded-full"whileHover={{y:-2}} ><Facebook/></motion.a>
 
                 <button 
                 className={`ml-4 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
@@ -147,41 +140,33 @@ const NavBar = () => {
 
     <nav className="flex items-center justify-center flex-wrap mt-2 sm:mx-1 ">
         <motion.a
-            href='https://twitter.com'
+            href='https://twitter.com/23Mridul'
             target={'_blank'}
             whileTap={{
             scale: 0.9
         }}
             className="w-6 mx-3"whileHover={{y:-2}} ><TwitterIcon/></motion.a>
         <motion.a
-            href='https://twitter.com'
+            href='https://github.com/Mridul-web-me'
             target={'_blank'}
             whileTap={{
             scale: 0.9
         }}
             className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1 "whileHover={{y:-2}} ><GithubIcon/></motion.a>
         <motion.a
-            href='https://twitter.com'
+            href='https://www.linkedin.com/in/mridul-islam-1990a9155/'
             target={'_blank'}
             whileTap={{
             scale: 0.9
         }}
             className="w-6 mx-3"whileHover={{y:-2}} ><LinkedInIcon/></motion.a>
         <motion.a
-            href='https://twitter.com'
+            href='https://www.facebook.com/mridul.islam01'
             target={'_blank'}
             whileTap={{
             scale: 0.9
         }}
-            className="w-6 mx-3 bg-light rounded-full sm:mx-1 "whileHover={{y:-2}} ><PinterestIcon/></motion.a>
-        <motion.a
-            href='https://twitter.com'
-            target={'_blank'}
-            whileTap={{
-            scale: 0.9
-        }}
-            className="w-6 ml-3"whileHover={{y:-2}} ><DribbbleIcon/></motion.a>
-
+            className="w-6 mx-3 bg-light rounded-full sm:mx-1 "whileHover={{y:-2}} ><Facebook/></motion.a>
             <button 
             className={`ml-4 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"} sm:mx-1 my-2`}
             onClick={()=>setMode(mode === 'light' ? "dark" : "light")}>
