@@ -1,16 +1,32 @@
-import React from 'react'
-import { CircularText } from './Icons'
-import Link from 'next/link'
+import React from 'react';
+import { CircularText } from './Icons';
+import Link from 'next/link';
 
 const HireMe = () => {
   return (
-    <div className='fixed left-4 bottom-4 flex items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0'>
-        <div className='w-48 h-auto flex items-center justify-center relative md:w-24'>
-            <CircularText className={"fill-dark animate-spin-slow dark:fill-light"}/>
-            <Link href="mailto:md.mridul.23@gmail.com" className=" flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadhow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-light hover:text-dark hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:w-12 md:h-12 md:text-[10px] ">Hire Me</Link>
-        </div>
-    </div>
-  )
-}
+    <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0">
+      <div className="w-48 h-auto flex items-center justify-center relative md:w-24">
+        {/* <CircularText className={"fill-dark animate-spin-slow dark:fill-light"}/>
+            <Link href="mailto:md.mridul.23@gmail.com" className=" flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadhow-md border border-solid border-dark w-20 h-20 rounded-full font-semibold hover:bg-light hover:text-dark hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:w-12 md:h-12 md:text-[10px] ">Hire Me</Link> */}
 
-export default HireMe
+        <div itemscope itemtype="http://schema.org/Person" class="fiverr-seller-widget" style={{ display: 'inline-block' }}>
+          <a itemprop="url" href="https://www.fiverr.com/mridulislam23" rel="nofollow" target="_blank" style={{ display: 'inline-block' }}>
+            <div class="fiverr-seller-content" id="fiverr-seller-widget-content-2cf3e108-506d-479d-8b4b-ab008ff6fd42" itemprop="contentURL" style={{ display: 'none' }}></div>
+            <div id="fiverr-widget-seller-data" style={{ display: 'none' }}>
+              <div itemprop="name">mridulislam23</div>
+              <div itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">Fiverr</span>
+              </div>
+              <div itemprop="jobtitle">Seller</div>
+              <div itemprop="description">I am Mridul and I am a web developer. I have a small team of experts and we specialize in web development. We are probably one of the most responsive teams on Fiverr. Highly professional and well-skilled in HTML5, CSS3, Bootstrap, Tailwind, Material UI, JavaScript, Reactjs, Nodejs, Express & MongoDB. Our priorities are the satisfaction of clients, delivery on time, and Quality of work. Place your orders with comfort. Please feel free to Contact Us anytime concerning any questions.</div>
+            </div>
+          </a>
+        </div>
+
+        <script id="fiverr-seller-widget-script-2cf3e108-506d-479d-8b4b-ab008ff6fd42" src="https://widgets.fiverr.com/api/v1/seller/mridulislam23?widget_id=2cf3e108-506d-479d-8b4b-ab008ff6fd42" data-config='{"category_name":"Programming \u0026 Tech"}' async="true" defer="true"></script>
+      </div>
+    </div>
+  );
+};
+
+export default HireMe;
